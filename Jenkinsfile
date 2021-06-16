@@ -6,6 +6,11 @@ pipeline {
                 sh 'mvn install'
             }
         }
+        stage('copy') {
+            steps {
+                sh 'cp target/SOAP-WebService-1.0-SNAPSHOT.jar .'
+            }
+        }
         stage('docker-build') {
             steps {
                 sh 'docker build -t soap .'
