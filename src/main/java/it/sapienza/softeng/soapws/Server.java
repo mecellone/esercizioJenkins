@@ -11,7 +11,7 @@ public class Server {
 
     public static void main(String args[]) throws InterruptedException {
         WSImpl implementor = new WSImpl();
-        String address = "http://0.0.0.0:8080/WSInterface";
+        String address = "http://0.0.0.0:8085/WSInterface";
         Endpoint.publish(address, implementor);
         while(true) {}
         //Thread.sleep(60 * 1000);
