@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('mvn-build') {
             steps {
-                sh 'mvn install'
+                sh 'mvn clean install'
             }
         }
         stage('copy') {
