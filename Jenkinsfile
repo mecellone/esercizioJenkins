@@ -18,7 +18,7 @@ pipeline {
         }
         stage('docker-run') {
             steps {
-                sh 'docker run -d -p 8081:8080 soap'
+                sh 'docker run -d -p 8081:8085 soap'
             }            
 
         }
