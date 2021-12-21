@@ -79,7 +79,7 @@
                 <version>1.6.0</version>
                 <artifactId>exec-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>it.sapienza.softeng.soapws.Server</mainClass>
+                    
                 </configuration>
             </plugin>
         </plugins>
